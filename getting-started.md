@@ -1,3 +1,7 @@
+layout: getting-started
+title: "Getting Started with IoT-FS"
+permalink: https://clueboard.github.io/IoT-FS/getting-started.html
+
 # Getting Started
 
 This page will give you a broad overview of how to build your IoT-FS smart home. Our goal is to document the paths, not to recommend one over another.
