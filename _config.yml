@@ -1,4 +1,3 @@
-theme: jekyll-theme-tactile
+theme: jekyll-theme-modernist
 title: Internet of Things - From Scratch!
 description: How to build your own smart home based around a microservice architecture.
-show_downloads: true

@@ -62,19 +62,19 @@ As you read these keep in mind that neither standard has been widely adopted.
 
 Before you can deploy anything you need infrastructure to deploy it to. What you use and how your deployments work is up to you, here are some common choices:
 
-1. Linux and [systemd](https://systemd.io/)
+* Linux and [systemd](https://systemd.io/)
     * This is probably the simplest to get started with, and in many cases is all you need. You can use any Linux Distribution you want, such as [Arch](https://archlinux.org/), [Debian](https://www.debian.org/), [Fedora](https://getfedora.org/), [Mint](https://linuxmint.com/), [Raspian](https://www.raspberrypi.com/software/), [Ubuntu](https://ubuntu.com/), etc.
     * Resource Overhead: This has the least overhead of the 4 options. Use this when you need to maximise limited hardware.
     * Administration Overhead: Since everything is on a single server you might have problems getting two microservices to play nice with each other. Expect to spend time sorting out conflicts and dealing with large upgrade sets.
-2. Linux and Docker
+* Linux and Docker
     * There are a wide variety of options for running Docker, including on your workstation, server, NAS, or cluster.
     * Resource Overhead: While docker containers have low CPU overhead expect to use more disk space and more memory.
     * Administration Overhead: It varies. You don't have the conflicts to deal with like the systemd case, but you may have to deal with docker getting into weird states.
-3. Linux and Kubernetes
+* Linux and Kubernetes
     * [Kubernetes](https://kubernetes.io/) (K8s) is a production-grade orchestration service. It builds on top of docker to provide a self-healing container infrastructure. Typically used when you have multiple computers you want to run in a cluster. While it can be a lot to setup and manage it provides unparalleled reliability.
     * Resource Overhead: More than Docker, you have a set of services that are constantly monitoring the cluster.
     * Administration Overhead: High. You have to learn a lot to setup the environment and keep it running. However, you almost never have to deal with ongoing maintenance, the overhead only happens when making changes.
-4. Rancher
+* Rancher
     * [Rancher](https://rancher.com/) builds on top of Kubernetes, providing a nice GUI and infrastructure to make managing K8s easier. 
     * Resource Overhead: Very high. The UI needs 2GB just to start, and more as your services grow.
     * Administration Overhead: Lower than K8s. It handles a lot for you and the GUI means you can figure a lot out without tearing your hair out reading docs.
