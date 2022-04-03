@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Internet of Things - From Scratch!
 
-You can use the [editor on GitHub](https://github.com/clueboard/IoT-FS/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Or, how to build your own smart home based around a microservice architecture.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# What Is This?
 
-### Markdown
+This site is a guide for building your own IoT (or Smart Home, etc) Infrastructure using MQTT and a collection of services. Think of it as the Smart Home equivalent of [Linux From Scratch](https://www.linuxfromscratch.org/).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Why Would I want To Build My Own IoT?
 
-```markdown
-Syntax highlighted code block
+There are many reasons people decide to build their own smarthome infrastructure:
 
-# Header 1
-## Header 2
-### Header 3
+* Learning- It's a great way to learn about microservice architectures and how to run them.
+* Control- You want to control exactly what runs in your home, not turn it over to Big Tech.
+* Reliability- You want a system that you can make as reliable and resiliant as possible.
 
-- Bulleted
-- List
+# Why don't you use HomeAssistant/openHAB/ioBroker/etc?
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/clueboard/IoT-FS/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Those are fine tools. In fact, they might be a part of your IoT-FS setup in some capacity! This site is not about foregoing those tools, but about building an IoT platform that is specific to you.
