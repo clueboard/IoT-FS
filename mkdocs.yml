@@ -1,0 +1,67 @@
+extra_css:
+  - stylesheets/IoT-FS.css
+extra:
+  version:
+    provider: mike
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - fenced_code
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - sane_lists
+  - tables
+  - toc:
+      marker: ''
+      permalink: true
+      toc_depth: 3
+  - wikilinks
+nav:
+  - Home: README.md
+  - Getting Started: getting-started.md
+plugins:
+  - search:
+      prebuild_index: true
+      separator: '[\s\-\_]+'
+repo_name: clueboard/IoT-FS
+repo_url: https://github.com/clueboard/IoT-FS
+site_name: Internet of Things - From Scratch!
+site_url: https://IoT-FS.clueboard.co/
+theme:
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - search.suggest
+  font:
+    text: Varela Round
+    code: Source Code Pro
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
