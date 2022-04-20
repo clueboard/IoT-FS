@@ -1,6 +1,7 @@
 extra_css:
   - stylesheets/IoT-FS.css
 extra:
+  generator: false
   version:
     provider: mike
 markdown_extensions:
@@ -25,8 +26,19 @@ markdown_extensions:
       toc_depth: 3
   - wikilinks
 nav:
-  - Home: README.md
-  - Getting Started: getting-started.md
+  - Home: index.md
+  - 'Getting Started':
+    - Introduction: getting-started/index.md
+    - Infrastructure: getting-started/infrastructure.md
+    - Understanding MQTT: getting-started/mqtt.md
+  - Infrastructure: 
+    - Introduction to Infrastructure: infrastructure/index.md
+    - 'Linux Server': infrastructure/server-linux.md
+    - Docker:
+      - 'Docker Server': infrastructure/docker.md
+      - 'Docker Compose': infrastructure/docker-compose.md
+      - 'Docker Deploy': infrastructure/docker-deploy.md
+      - 'Kubernetes': infrastructure/docker-kubernetes.md
 plugins:
   - search:
       prebuild_index: true
@@ -37,15 +49,16 @@ site_name: Internet of Things - From Scratch!
 site_url: https://IoT-FS.clueboard.co/
 theme:
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.expand
     - navigation.instant
-    - navigation.sections
     - search.highlight
     - search.share
     - search.suggest
   font:
-    text: Varela Round
-    code: Source Code Pro
+    text: Raleway
+    code: Overpass Mono
   icon:
     repo: fontawesome/brands/github
   language: en
