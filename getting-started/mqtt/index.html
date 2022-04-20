@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://IoT-FS.clueboard.co/getting-started/">
+        <link rel="canonical" href="https://IoT-FS.clueboard.co/getting-started/mqtt/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
       
-        <title>Introduction - Internet of Things - From Scratch!</title>
+        <title>Understanding MQTT - Internet of Things - From Scratch!</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
         
       
     
@@ -37,9 +37,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/IoT-FS.css">
+      <link rel="stylesheet" href="../../stylesheets/IoT-FS.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#understanding-mqtt" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Internet of Things - From Scratch!" class="md-header__button md-logo" aria-label="Internet of Things - From Scratch!" data-md-component="logo">
+    <a href="../.." title="Internet of Things - From Scratch!" class="md-header__button md-logo" aria-label="Internet of Things - From Scratch!" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Understanding MQTT
             
           </span>
         </div>
@@ -205,7 +205,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -222,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Getting Started
       </a>
     </li>
@@ -238,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../infrastructure/" class="md-tabs__link">
+      <a href="../../infrastructure/" class="md-tabs__link">
         Infrastructure
       </a>
     </li>
@@ -272,7 +272,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Internet of Things - From Scratch!" class="md-nav__button md-logo" aria-label="Internet of Things - From Scratch!" data-md-component="logo">
+    <a href="../.." title="Internet of Things - From Scratch!" class="md-nav__button md-logo" aria-label="Internet of Things - From Scratch!" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -303,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -344,59 +344,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introduction
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
         Introduction
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
-    Target Audience
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-understanding" class="md-nav__link">
-    Basic Understanding
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -408,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infrastructure/" class="md-nav__link">
+      <a href="../infrastructure/" class="md-nav__link">
         Infrastructure
       </a>
     </li>
@@ -420,11 +372,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="mqtt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Understanding MQTT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Understanding MQTT
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-mqtt" class="md-nav__link">
+    Understanding MQTT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-topics" class="md-nav__link">
+    MQTT Topics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-payloads" class="md-nav__link">
+    MQTT Payloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-standards" class="md-nav__link">
+    MQTT Standards
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -470,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/" class="md-nav__link">
+      <a href="../../infrastructure/" class="md-nav__link">
         Introduction to Infrastructure
       </a>
     </li>
@@ -484,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/server-linux/" class="md-nav__link">
+      <a href="../../infrastructure/server-linux/" class="md-nav__link">
         Linux Server
       </a>
     </li>
@@ -524,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/docker/" class="md-nav__link">
+      <a href="../../infrastructure/docker/" class="md-nav__link">
         Docker Server
       </a>
     </li>
@@ -538,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/docker-compose/" class="md-nav__link">
+      <a href="../../infrastructure/docker-compose/" class="md-nav__link">
         Docker Compose
       </a>
     </li>
@@ -552,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/docker-deploy/" class="md-nav__link">
+      <a href="../../infrastructure/docker-deploy/" class="md-nav__link">
         Docker Deploy
       </a>
     </li>
@@ -566,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infrastructure/docker-kubernetes/" class="md-nav__link">
+      <a href="../../infrastructure/docker-kubernetes/" class="md-nav__link">
         Kubernetes
       </a>
     </li>
@@ -604,8 +614,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -614,15 +622,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
-    Target Audience
+  <a href="#understanding-mqtt" class="md-nav__link">
+    Understanding MQTT
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-understanding" class="md-nav__link">
-    Basic Understanding
+  <a href="#mqtt-topics" class="md-nav__link">
+    MQTT Topics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-payloads" class="md-nav__link">
+    MQTT Payloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-standards" class="md-nav__link">
+    MQTT Standards
   </a>
   
 </li>
@@ -639,26 +661,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/clueboard/IoT-FS/edit/master/docs/getting-started/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/clueboard/IoT-FS/edit/master/docs/getting-started/mqtt.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>This guide will give you a broad overview of how to build your IoT-FS smart home. Our goal is to document the paths, not to recommend one over another.</p>
-<h2 id="target-audience">Target Audience<a class="headerlink" href="#target-audience" title="Permanent link">&para;</a></h2>
-<p>This guide assumes you already have a basic understand of developing software in at least one programming language. You should already be familiar with concepts like editing plain text files, writing structured files like JSON and YAML, and using HTTP or other network protocols. You don't need to know any language in particular, you can run someone else's code without knowing the programming language, and you can write your own services in whatever language you want.</p>
-<p>If your current or desired job title is on this list, IoT-FS is an excellent way to develop your skills and build a portfolio of personal projects to show off.</p>
+  <h1>Understanding MQTT</h1>
+
+<h3 id="understanding-mqtt">Understanding MQTT<a class="headerlink" href="#understanding-mqtt" title="Permanent link">&para;</a></h3>
+<p>MQTT is the core infrastructure you will build your IoT-FS around. It is a lightweight message transport that you will both read from and publish to. Messages sent to MQTT can be read by anyone, and you can tell the MQTT server which messages you are interested in receiving. If you want the nitty gritty details you can head over to <a href="https://mqtt.org/">mqtt.org</a>, but read on for a basic overview of what you need to know for now.</p>
+<p>Messages sent to MQTT are (usually) delivered to clients in the order they are received. If your connection to the server is stable they will always be in order. If your connection is not stable it will depend on the Quality Of Service (QOS) level set- if QOS=0 a message may not get delivered, if QOS=1 the message may get delivered more than once, and if QOS=2 the message will get delivered exactly once. It's not important to understand the difference between these right now, it's enough to know that you can choose the level of reliability to match your application's needs.</p>
+<p>When a client sends a message to MQTT it contains two important pieces of information, the <code>topic</code> and the <code>payload</code>.</p>
+<h3 id="mqtt-topics">MQTT Topics<a class="headerlink" href="#mqtt-topics" title="Permanent link">&para;</a></h3>
+<p>The topic is how the MQTT server routes messages. Clients subscribe to one or more topics and the MQTT server routes all matching messages to those clients. Topics are basically file paths, they are slash (<code>/</code>) separated strings that indicate unique resources. Here are some examples of topics I see on my MQTT server:</p>
 <ul>
-<li>Programmer</li>
-<li>Software Engineer</li>
-<li>DevOps</li>
-<li>Site Reliability Engineer</li>
-<li>Infrastructure/Platform Engineer</li>
+<li><code>homeassistant/binary_sensor/Kitchen-FrontdoorDetector/contact/config</code></li>
+<li><code>weather/daily/0/temp/day_C</code></li>
+<li><code>rtl_433/7b85b6eafe6d/devices/Acurite-Tower/A/9181/temperature_C</code></li>
+<li><code>zwave/Kitchen/FrontdoorDetector/113/0/Access_Control/Door_state</code></li>
 </ul>
-<h2 id="basic-understanding">Basic Understanding<a class="headerlink" href="#basic-understanding" title="Permanent link">&para;</a></h2>
-<p>The rest of this section will cover some basic concepts you will need to familiarize yourself with as you begin your journey. You don't have to dive deep, for now a surface understanding of the technology is enough.</p>
+<p>As you can see there is a structure to MQTT topics, but that structure is not always well defined.</p>
+<h3 id="mqtt-payloads">MQTT Payloads<a class="headerlink" href="#mqtt-payloads" title="Permanent link">&para;</a></h3>
+<p>To the MQTT server a payload is just an array of bytes. It passes along this payload exactly as it was received. It's up to the client to correctly decode the payload. In practice payloads are almost always ASCII or UTF-8 encoded text.</p>
+<p>(Note: In MQTT 5 there is new metadata to indicate the payload's format and content type. We are focusing on MQTT 3 for now as it is the most widely-deployed protocol.)</p>
+<p>Some applications use single-value payloads. These payloads are typically strings or simple ints or floats encoded as strings. Some applications encode their payload using JSON to allow for more complex data to be sent. Neither pattern is right or wrong, they simply grew out of the requirements of the application.</p>
+<h3 id="mqtt-standards">MQTT Standards<a class="headerlink" href="#mqtt-standards" title="Permanent link">&para;</a></h3>
+<p>As you can tell from reading the last two sections MQTT allows for a broad range of usage patterns. There have been two attempts to standardize these patterns that are worth your time to read:</p>
+<ul>
+<li><a href="https://github.com/mqtt-smarthome/mqtt-smarthome">mqtt-smarthome</a></li>
+<li><a href="https://github.com/homieiot/convention">The Homie Convention</a> </li>
+</ul>
+<p>As you read these keep in mind that neither standard has been widely adopted.</p>
 
               
             </article>
@@ -672,7 +706,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../infrastructure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Infrastructure" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -681,20 +715,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Infrastructure
             </div>
           </div>
         </a>
       
       
         
-        <a href="infrastructure/" class="md-footer__link md-footer__link--next" aria-label="Next: Infrastructure" rel="next">
+        <a href="../../infrastructure/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction to Infrastructure" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Infrastructure
+              Introduction to Infrastructure
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -719,10 +753,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
       
     
   </body>
