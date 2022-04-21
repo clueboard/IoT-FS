@@ -27,10 +27,10 @@ markdown_extensions:
   - wikilinks
 nav:
   - Home: index.md
-  - 'Getting Started':
-    - Introduction: getting-started/index.md
-    - Infrastructure: getting-started/infrastructure.md
-    - Understanding MQTT: getting-started/mqtt.md
+  - 'Overviews':
+    - Introduction: overviews/index.md
+    - Infrastructure: overviews/infrastructure.md
+    - MQTT: overviews/mqtt.md
   - Infrastructure: 
     - Introduction to Infrastructure: infrastructure/index.md
     - 'Linux Server': infrastructure/server-linux.md

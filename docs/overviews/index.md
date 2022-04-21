@@ -1,4 +1,4 @@
-# Getting Started
+# Introduction
 
 This guide will give you a broad overview of how to build your IoT-FS smart home. Our goal is to document the paths, not to recommend one over another.
 
@@ -16,4 +16,4 @@ If your current or desired job title is on this list, IoT-FS is an excellent way
 
 ## Basic Understanding
 
-The rest of this section will cover some basic concepts you will need to familiarize yourself with as you begin your journey. You don't have to dive deep, for now a surface understanding of the technology is enough.
+The rest of this chapter will cover some basic concepts you will need to familiarize yourself with as you begin your journey. You don't have to dive deep, for now a surface understanding of the technology is enough.
