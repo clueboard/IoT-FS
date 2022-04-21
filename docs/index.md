@@ -11,8 +11,9 @@ This site is a guide for building your own IoT (or Smart Home, etc) Infrastructu
 There are many reasons people decide to build their own smarthome infrastructure:
 
 * Learning- It's a great way to learn about microservice architectures and how to run them.
-* Control- You want to control exactly what runs in your home, not turn it over to Big Tech.
 * Reliability- You want a system that you can make as reliable and resiliant as possible.
+* Security- Because that's what the S in IoT stands for.
+* Control- You want to control exactly what runs in your home, not turn it over to Big Tech.
 
 # Why don't you use HomeAssistant/openHAB/ioBroker/etc?
 
