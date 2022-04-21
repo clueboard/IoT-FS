@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://IoT-FS.clueboard.co/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/vestigal/</loc>
-         <lastmod>2022-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://IoT-FS.clueboard.co/getting-started/</loc>
-         <lastmod>2022-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://IoT-FS.clueboard.co/getting-started/infrastructure/</loc>
-         <lastmod>2022-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://IoT-FS.clueboard.co/getting-started/mqtt/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/docker-compose/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/docker-deploy/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/docker-kubernetes/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/docker/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://IoT-FS.clueboard.co/infrastructure/server-linux/</loc>
-         <lastmod>2022-04-20</lastmod>
+         <lastmod>2022-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://IoT-FS.clueboard.co/overviews/</loc>
+         <lastmod>2022-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://IoT-FS.clueboard.co/overviews/infrastructure/</loc>
+         <lastmod>2022-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://IoT-FS.clueboard.co/overviews/mqtt/</loc>
+         <lastmod>2022-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

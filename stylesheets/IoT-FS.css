@@ -1,7 +1,12 @@
+.md-typeset h1 {
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+
 .md-nav__list {
-    padding-left: 0.5rem;
+	padding-left: 0.5rem;
 }
 
 .md-grid {
-  max-width: initial;
+	max-width: initial;
 }
