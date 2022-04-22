@@ -14,4 +14,4 @@ You'll want to do some basic capacity planning to know whether your system can h
 
 ## Solutions
 
-The solutions on the following pages are ordered by ease of getting started. They also build on each other- you can get started with a simple Linux server, add Docker to it when you're read, and if you find it would be helpful you can add Kubernetes down the road. That's one of the benefits of building this way- migrations can be done a piece at a time, rather than forklifted.
+The solutions on the following pages are ordered by ease of getting started. They also build on each other- you can get started with a simple Linux server, add Docker to it when you're ready, and if you find it would be helpful you can add Kubernetes down the road. That's one of the benefits of building this way- migrations can be done a piece at a time, rather than forklifted.

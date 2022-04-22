@@ -37,7 +37,6 @@ nav:
     - Docker:
       - 'Docker Server': infrastructure/docker.md
       - 'Docker Compose': infrastructure/docker-compose.md
-      - 'Docker Deploy': infrastructure/docker-deploy.md
       - 'Kubernetes': infrastructure/docker-kubernetes.md
 plugins:
   - search:
