@@ -2,6 +2,14 @@
 
 Docker Compose is the standard way to manage services using Docker. While it is focused on defining and running multi-container applications it also works well for managing the configuration of single-container applications. See the [official documentation](https://docs.docker.com/compose/) for a more in-depth explanation.
 
+## Why Would You Want To Use Docker Compose?
+
+When you first start out you may wonder why you want to go to this extra work. You can just launch containers directly and they stay running, and all my services are simple. What benefit does this provide?
+
+The answer to that question will come in a few days, weeks, or months, when you are ready to change your system. When it's time to `docker pull` a new upstream container you will have to destroy and recreate the container. Will you remember every argument you passed the first time? What happens if you have a drive failure and you have to rebuild everything?
+
+With a proper Docker Compose setup you don't have to worry about any of that, because your exact configuration will be documented in `docker-compose.yml` files.
+
 ## Structure For Your Docker Compose Infrastructure
 
 While it is possible to work with multiple `docker-compose.yml` files within the same directory, most people find it easier to build a directory tree to store their services and configuration. This allows for a lot of flexibility when it comes to building and managing your services. There are many ways you manage these files, but this is what we recommend for maximum flexibility and ease of use.
@@ -12,7 +20,7 @@ First, pick a home for your directory tree. This can be anywhere, but in most si
 
 ```bash
 sudo mkdir -p /srv/docker-compose
-sudo chown `whoami` /srv/docker-compose
+sudo chown `whoami` /srv/docker-compose  # Optional, but makes it easier to manage long term
 ```
 
 Within this directory you will create directories for every service you want to run.
@@ -28,7 +36,7 @@ Let's start by setting up a service for the Mosquitto MQTT broker. This will dem
 First we'll create directories for it. Notice that we have created a directory in `/srv/docker-compose` and directories for volume mounts in `/srv/mosquitto`. If you are setting up a service that doesn't need volume mounts you can skip that.
 
 ```bash
-sudo mkdir -p /srv/docker-compose/mosquitto /srv/mosquitto/conf /srv/mosquitto/data /srv/mosquitto/log
+mkdir -p /srv/docker-compose/mosquitto /srv/mosquitto/conf /srv/mosquitto/data /srv/mosquitto/log
 ```
 
 Create the `/srv/docker-compose/mosquitto/docker-compose.yml` file:
@@ -89,7 +97,7 @@ Sometimes you need to customize a container before it gets deployed. Docker prov
 As before we need to create the docker-compose directory:
 
 ```bash
-sudo mkdir -p /srv/docker-compose/nginx/nginx
+mkdir -p /srv/docker-compose/nginx/nginx
 ```
 
 Notice that we did not include a data directory in `/srv`, and we added an extra `/nginx` to the end of our path? The first `nginx` path component refers to the service, while the second `nginx` path component refers to the container.
@@ -134,7 +142,7 @@ docker-compose up --detach
 Now we'll look at a more complex example- we'll implement our own service along with the infrastructure it needs. In this example we'll stub out an application that uses a redis backend. As before, we start by creating the directories we need:
 
 ```bash
-sudo mkdir -p /srv/docker-compose/my_cool_app/my_cool_app
+mkdir -p /srv/docker-compose/my_cool_app/my_cool_app
 ```
 
 Create some files:
