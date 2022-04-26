@@ -20,14 +20,15 @@ First, pick a home for your directory tree. This can be anywhere, but in most si
 
 ```bash
 sudo mkdir -p /srv/docker-compose
-sudo chown `whoami` /srv/docker-compose  # Optional, but makes it easier to manage long term
+sudo chown `whoami` /srv/docker-compose  # Optional, but makes
+                                         # it easier to manage
 ```
 
 Within this directory you will create directories for every service you want to run.
 
 !!! note
 
-    The term "service" here is used in a slightly different way that you may be used to. In this context a service is any collection of one or more containers. Each container runs a single daemon process, which is what you may be used to thinking of as a service.
+    The term "service" here is used in a slightly different way than you may be used to. In this context a service is any collection of one or more containers. Each container runs a single daemon process, which is what you may be used to thinking of as a service.
 
 ### Create Your First Service
 

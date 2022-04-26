@@ -35,7 +35,8 @@ nav:
     - MQTT: overview/mqtt.md
   - Infrastructure: 
     - Introduction to Infrastructure: infrastructure/index.md
-    - 'Linux Server': infrastructure/server-linux.md
+    - Hardware: infrastructure/hardware.md
+    - 'Linux': infrastructure/linux.md
     - Docker:
       - 'Docker Server': infrastructure/docker.md
       - 'Docker Compose': infrastructure/docker-compose.md
