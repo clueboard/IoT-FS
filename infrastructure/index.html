@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://IoT-FS.clueboard.co/infrastructure/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.10">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.df45aa19.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
@@ -459,47 +459,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introduction to Infrastructure
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Introduction to Infrastructure
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recommendations-that-apply-to-all-solutions" class="md-nav__link">
-    Recommendations That Apply To All Solutions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solutions" class="md-nav__link">
-    Solutions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -512,8 +474,22 @@
   
   
     <li class="md-nav__item">
-      <a href="server-linux/" class="md-nav__link">
-        Linux Server
+      <a href="hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linux/" class="md-nav__link">
+        Linux
       </a>
     </li>
   
@@ -529,18 +505,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" data-md-state="indeterminate" type="checkbox" id="__nav_3_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_3">
+        <label class="md-nav__link" for="__nav_3_4">
           Docker
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Docker" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Docker
         </label>
@@ -621,28 +597,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recommendations-that-apply-to-all-solutions" class="md-nav__link">
-    Recommendations That Apply To All Solutions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solutions" class="md-nav__link">
-    Solutions
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -660,18 +614,7 @@
 
 
 <h1 id="infrastructure">Infrastructure<a class="headerlink" href="#infrastructure" title="Permanent link">&para;</a></h1>
-<p>Infrastructure is the physical hardware and service management software you use to deploy your microservices. In this section we'll cover some popular options and point you towards resources for building them. If you're just getting started and aren't sure which option to use, pick whatever you are comfortable with- microservices mean you can always migrate your setup one piece at a time to ensure continuity of service.</p>
-<h2 id="recommendations-that-apply-to-all-solutions">Recommendations That Apply To All Solutions<a class="headerlink" href="#recommendations-that-apply-to-all-solutions" title="Permanent link">&para;</a></h2>
-<p>You'll want to do some basic capacity planning to know whether your system can handle your planned load. Here are some things to keep in mind when doing that.</p>
-<ul>
-<li>Mosquitto consumes around 100mb RAM.</li>
-<li>Each python service consumes at least 15mb RAM.</li>
-<li>With proper log rotation my stored data is less than 1gb.</li>
-<li>Homebridge can consume a lot of RAM, depending on how many plugins you run. I regularly see 150mb+.</li>
-<li>If you add HomeAssistant, openHab, or other "all-in-one" systems your footprint will significantly increase.</li>
-</ul>
-<h2 id="solutions">Solutions<a class="headerlink" href="#solutions" title="Permanent link">&para;</a></h2>
-<p>The solutions on the following pages are ordered by ease of getting started. They also build on each other- you can get started with a simple Linux server, add Docker to it when you're ready, and if you find it would be helpful you can add Kubernetes down the road. That's one of the benefits of building this way- migrations can be done a piece at a time, rather than forklifted.</p>
+<p>Infrastructure is the physical hardware and service management software you use to deploy your microservices. In this chapter we'll cover the recommended options and point you towards resources for using them.</p>
 
               
             </article>
@@ -701,13 +644,13 @@
       
       
         
-        <a href="server-linux/" class="md-footer__link md-footer__link--next" aria-label="Next: Linux Server" rel="next">
+        <a href="hardware/" class="md-footer__link md-footer__link--next" aria-label="Next: Hardware" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Linux Server
+              Hardware
             </div>
           </div>
           <div class="md-footer__button md-icon">

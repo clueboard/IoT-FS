@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://IoT-FS.clueboard.co/infrastructure/docker-compose/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.10">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.df45aa19.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
@@ -464,8 +464,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../server-linux/" class="md-nav__link">
-        Linux Server
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        Linux
       </a>
     </li>
   
@@ -483,18 +497,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_3">
+        <label class="md-nav__link" for="__nav_3_4">
           Docker
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Docker" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
+        <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Docker
         </label>
@@ -740,12 +754,13 @@
 <h3 id="basic-setup">Basic setup<a class="headerlink" href="#basic-setup" title="Permanent link">&para;</a></h3>
 <p>First, pick a home for your directory tree. This can be anywhere, but in most situations we recommend <code>/srv/docker</code>. For the rest of this guide we will assume you have placed your directory tree there.</p>
 <div class="highlight"><pre><span></span><code>sudo mkdir -p /srv/docker-compose
-sudo chown <span class="sb">`</span>whoami<span class="sb">`</span> /srv/docker-compose  <span class="c1"># Optional, but makes it easier to manage long term</span>
+sudo chown <span class="sb">`</span>whoami<span class="sb">`</span> /srv/docker-compose  <span class="c1"># Optional, but makes</span>
+                                         <span class="c1"># it easier to manage</span>
 </code></pre></div>
 <p>Within this directory you will create directories for every service you want to run.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The term "service" here is used in a slightly different way that you may be used to. In this context a service is any collection of one or more containers. Each container runs a single daemon process, which is what you may be used to thinking of as a service.</p>
+<p>The term "service" here is used in a slightly different way than you may be used to. In this context a service is any collection of one or more containers. Each container runs a single daemon process, which is what you may be used to thinking of as a service.</p>
 </div>
 <h3 id="create-your-first-service">Create Your First Service<a class="headerlink" href="#create-your-first-service" title="Permanent link">&para;</a></h3>
 <p>Let's start by setting up a service for the Mosquitto MQTT broker. This will demonstrate setting up a simple service which someone else has published a container for.</p>
