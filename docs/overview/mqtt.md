@@ -15,7 +15,7 @@ The topic is how the MQTT server routes messages. Clients subscribe to one or mo
 * `rtl_433/7b85b6eafe6d/devices/Acurite-Tower/A/9181/temperature_C`
 * `zwave/Kitchen/FrontdoorDetector/113/0/Access_Control/Door_state`
 
-As you can see there is a structure to MQTT topics, but that structure is not always well defined.
+As you can see there is a structure to MQTT topics, but that structure is not always well defined or consistent between services.
 
 ## Wildcards
 
